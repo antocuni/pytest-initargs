@@ -1,0 +1,21 @@
+import setuptools
+
+setuptools.setup(name='pytest-initargs',
+                 version='0.1',
+                 description='py.test plugin to have test classes with __init__',
+                 long_description=open('README').read().strip(),
+                 author='Antonio Cuni',
+                 author_email='anto.cuni@gmail.com',
+                 url='https://bitbucket.org/antocuni/pytest-initargs',
+                 py_modules=['pytest_initargs'],
+                 install_requires=['py>=1.1.1'],
+                 entry_points={'pytest11': ['pytest_initargs = pytest_initargs']},
+                 license='MIT License',
+                 zip_safe=False,
+                 keywords='py.test pytest',
+                 classifiers=['Development Status :: 4 - Beta',
+                              'Intended Audience :: Developers',
+                              'License :: OSI Approved :: MIT License',
+                              'Operating System :: OS Independent',
+                              'Programming Language :: Python',
+                              'Topic :: Software Development :: Testing'])
